@@ -20,4 +20,4 @@ Rather than exploring other lines of work, the remaining plunger crusaders have 
 
 ### Zone: Rul Outskirts
 
-We join our so-called heroes upon their approach to the Gates of Ruin, midway through the adventure to find the source of the primordial chaos. "Abandon all hope ye who enter here", but the last few Unblocker knights cannot afford to turn back now. Literally.
+We join our so-called heroes upon their approach to the Gates of Ruin, midway through the adventure to find the source of the primordial chaos. "Abandon all hope ye who enter here", but the last few Unblocker knights cannot afford to turn back now. Literally. Go out and do your thing. Go clear a path and find some cash while you're at it.
