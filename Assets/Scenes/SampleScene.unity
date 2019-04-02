@@ -347,6 +347,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4634
       objectReference: {fileID: 0}
+    - target: {fileID: 2382414997971775828, guid: 611ce158965184f4c85c6677c4a233e5,
+        type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f39cba890706470439a7afa5393a6cba, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 611ce158965184f4c85c6677c4a233e5, type: 3}
 --- !u!1 &339613543
@@ -1659,6 +1664,7 @@ GameObject:
   - component: {fileID: 1625231978}
   - component: {fileID: 1625231977}
   - component: {fileID: 1625231976}
+  - component: {fileID: 1625231979}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -1676,11 +1682,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1e6be4a4a7895d84093f66376af6b1c7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1773,7 +1779,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1872,6 +1878,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625231979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625231975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672ca98fec9c869488c9b956463828e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSource: {fileID: 1625231977}
+  bgmSource: {fileID: 1625231976}
+  lowPitchRange: 0.95
+  highPitchRange: 1.05
 --- !u!1 &1849996083
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,6 +2441,11 @@ MonoBehaviour:
   gameLevelManager: {fileID: 0}
   health: 3
   timeOutHurt: 2
+  checkpointSound: {fileID: 8300000, guid: 2624502863d019c4f9e1c52bd3ddb44e, type: 3}
+  jumpSound1: {fileID: 8300000, guid: 1a781a470b4cbaf4184db4e2ba6bec26, type: 3}
+  jumpSound2: {fileID: 8300000, guid: 4d1448bfbd70cbc438a6e5613044de0a, type: 3}
+  hurtSound1: {fileID: 8300000, guid: d4ff4129f9abc40498c5e5d914acc0db, type: 3}
+  hurtSound2: {fileID: 8300000, guid: 4ebf6f4b530e43a4b897ab41a4964566, type: 3}
 --- !u!95 &2068708969
 Animator:
   serializedVersion: 3
@@ -2454,6 +2481,10 @@ MonoBehaviour:
   health: 1
   timeOutHurt: 2
   anim: {fileID: 0}
+  attackSound1: {fileID: 8300000, guid: ef26ca033f7ac064ba189a9d89a23cd1, type: 3}
+  attackSound2: {fileID: 8300000, guid: 25820b0373ea34b4ea5cb47028c7830b, type: 3}
+  attackSound3: {fileID: 8300000, guid: 34e1b04b9e6872c4aab015e84e26dc4e, type: 3}
+  attackSound4: {fileID: 8300000, guid: 09e963dbfd99be944b57031eef22a810, type: 3}
 --- !u!1001 &2382414996895121455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2521,6 +2552,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2382414997971775828, guid: 611ce158965184f4c85c6677c4a233e5,
+        type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f39cba890706470439a7afa5393a6cba, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 611ce158965184f4c85c6677c4a233e5, type: 3}
 --- !u!1001 &6321217949466640937
@@ -2754,5 +2790,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2403221321533993928, guid: 66f29bf8fa8b10648bd6d991dfbe3e7a,
+        type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f39cba890706470439a7afa5393a6cba, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66f29bf8fa8b10648bd6d991dfbe3e7a, type: 3}
