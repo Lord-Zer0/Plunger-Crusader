@@ -22,6 +22,12 @@ public class PlayerController : MonoBehaviour
     public int health = 1;
     public float timeOutHurt = 2;
 
+    // Sound Effects
+    public AudioClip checkpointSound;
+    public AudioClip jumpSound1;
+    public AudioClip jumpSound2;
+    public AudioClip hurtSound1;
+    public AudioClip hurtSound2;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +60,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isTouchingGround)
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
+            SoundManager.instance.RandomizeSfx(jumpSound1, jumpSound2);
         }
         playerAnimation.SetFloat("Speed", Mathf.Abs (rigidBody.velocity.x));
         playerAnimation.SetBool("OnGround", isTouchingGround);
@@ -63,11 +70,13 @@ public class PlayerController : MonoBehaviour
     {
         if (other.tag == "FallDetector")
         {
+            SoundManager.instance.RandomizeSfx(hurtSound1, hurtSound2);
             gameLevelManager.Respawn();
         }
         if (other.tag == "Checkpoint")
         {
             respawnPoint = other.transform.position;
+            SoundManager.instance.PlaySingle(checkpointSound);
         }
     }
     

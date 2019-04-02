@@ -5,6 +5,8 @@ using UnityEngine;
 public class GemScript : MonoBehaviour
 {
     private LevelManager gameLevelManager;
+    public AudioClip collectSound;
+
     public int coinValue;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class GemScript : MonoBehaviour
         if (other.tag == "Player")
         {
             gameLevelManager.AddCoins(coinValue);
+            SoundManager.instance.RandomizeSfx(collectSound);
             Destroy(gameObject);
         }
         

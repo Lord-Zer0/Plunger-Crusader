@@ -15,6 +15,12 @@ public class PlayerAttack : MonoBehaviour
 
     public Animator anim;
 
+    // Sound Effects
+    public AudioClip attackSound1;
+    public AudioClip attackSound2;
+    public AudioClip attackSound3;
+    public AudioClip attackSound4;
+
     private void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
@@ -29,7 +35,7 @@ public class PlayerAttack : MonoBehaviour
             attacking = true;
             attackTimer = attackCd;
             attackTrigger.enabled = true;
-            
+            SoundManager.instance.RandomizeSfx(attackSound1, attackSound2, attackSound3, attackSound4);
               
         }
         if (attacking)
