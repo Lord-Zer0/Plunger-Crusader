@@ -3,9 +3,7 @@ guid: 43b4790e421ec0e4db4975b07645298b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - redFlag: {fileID: 21300000, guid: 2867c3d008e5763418752b566b36544b, type: 3}
-  - greenFlag: {fileID: 21300000, guid: b8f09d06c0085f740909890a8af70834, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
