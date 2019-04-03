@@ -8,7 +8,7 @@ Plunger Crusader takes a good look at adventure platformers and tries to demonst
 
 ## Demo Features
 
-This brief demonstration shows gameplay features that when fleshed out, will be the base of the full game. The features shown include:
+	This brief demonstration shows gameplay features that when fleshed out, will be the base of the full game. The features shown include:
 	1. Lateral movement
 	2. Jumping
 	3. Grappling
