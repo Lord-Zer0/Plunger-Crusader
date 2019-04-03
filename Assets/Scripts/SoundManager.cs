@@ -12,7 +12,8 @@ public class SoundManager : MonoBehaviour
     public float lowPitchRange = 0.95f;
     public float highPitchRange = 1.05f;
 
-    void Awake() {
+    void Awake() 
+    {
         if (instance == null)
             instance = this;
         else if (instance != this)
@@ -21,12 +22,14 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlaySingle(AudioClip clip) {
+    public void PlaySingle(AudioClip clip) 
+    {
         sfxSource.clip = clip;
         sfxSource.Play();
     }
 
-    public void RandomizeSfx(params AudioClip[] clips) {
+    public void RandomizeSfx(params AudioClip[] clips) 
+    {
         int randomIndex = Random.Range(0, clips.Length);
         float randomPitch = Random.Range(lowPitchRange, highPitchRange);
 
