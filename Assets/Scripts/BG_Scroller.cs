@@ -10,7 +10,6 @@ public class BG_Scroller : MonoBehaviour
     
     void Start()
     {
-        print(transform.position);
         startPosition = transform.position;
     }
 
